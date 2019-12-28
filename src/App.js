@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 import TodoItem from "./TodoItem.jsx";
@@ -11,13 +10,7 @@ let currentId = 1;
 class App extends React.Component {
   state = {
     visibilityFilter: "all",
-    todos: [
-      {
-        text: "mamad",
-        done: true,
-        id: 0
-      }
-    ]
+    todos: []
   };
 
   toggleTodo = (id) => {
